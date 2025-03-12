@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+  background:  hsl(0, 0%, 94%);
+ height: 100%;
+}
+.mainB{
+    margin: 10% 20% 20% 20%;
+    background: hsl(0, 0%, 100%);
+    height: 60vh;
+    width: 37%;
+    padding: 3% 10% 10% 4%;
+    border-radius: 10px 10px 200px 10px ;
+
+}
+
+.up-i {
+    display: flex;
+    flex-wrap: nowrap;
+   margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+.a-up{
+  display: flex;
+  flex-direction: column;
+  
+ 
+}
+.abel{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 9px;
+  color: hsl(0, 1%, 44%);
+}
+.up-i .inh{
+  width: 45%;
+  height: 15%;
+  padding: 10%;
+  border-style: solid;
+border-width: 1px;
+  border-radius: 4px;
+ border-color: hsl(0, 0%, 86%);
+  font-weight: bolder;
+}
+
+.up-i .inh:focus{
+  border-color: hsl(259, 100%, 65%);
+  outline: none;
+}
+/* input error  */
+.up-i .inh.error{
+  border-color: hsl(0, 100%, 67%);
+}
+.error-message{
+  font-size: 13px;
+  color: hsl(0, 100%, 67%);
+  margin-top: 6px;
+}
+
+/* end of input error  */
+.cen{
+  display: flex;
+  align-items: center;
+ 
+}
+.rbtn{
+  width: 15%;
+  border-width: 1px;
+  border-radius: 50%;
+  background-color:hsl(259, 100%, 65%) ;
+  padding: 2%;
+}
+.rbtn:hover{
+  background-color: black;
+}
+
+.h{
+  width: 85%;
+}
+.acal{
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  font-size: 40px ;
+  margin-top: 3%;
+}
+.outP{
+  height: 15vh;
+ 
+}
+.out{
+  color: hsl(259, 100%, 65%);
+}
+.inP{
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+
+
+/* responsive layout small phone screen */
+
+@media (max-width: 480px) {
+      .mainB{
+        height: 60vh;
+        width: 50%;
+        border-radius: 10px 10px 95px 10px ;
+      }
+      .up-i{
+        margin-top: 15%;
+        margin-bottom: 25%;
+       
+      }
+      .up-i .inh{
+        width: 65%;
+        height: 45%;
+      }
+      .rbtn{
+        position: absolute;
+        right: 42%;
+        z-index: 2;
+        width: 15%;
+        /* height: 10%; */
+        padding: 1%;
+      
+      }
+      .h{
+        width: 95%;
+      }
+      /* #arw{
+        height: 10%;
+      } */
+      .acal{
+        font-size: 15px;
+      }
+      .outP{
+        height: 10vh;
+      }
+      .inP{
+        margin-top: 60px;
+      }
+}
+/* responsive layout tablet phone screen */
+
+@media(min-width:485px) and (max-width:770px) {
+
+  .mainB{
+    height: 60vh;
+    width: 59%;
+    border-radius: 10px 10px 80px 10px ;
+  }
+  .up-i{
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  .up-i .inh{
+    width: 65%;
+    height: 25%;
+  }
+  .rbtn{
+    position: absolute;
+    right: 42%;
+    z-index: 2;
+    width: 15%;
+    /* height: 10%; */
+    padding: 1%;
+  
+  }
+  .h {
+    width: 99%;
+}
+.outP {
+  height: 10vh;
+}
+.acal{
+  font-size: 30px;
+  margin-top: 15%;
+}
+  
+}
+
+@media(min-width:790px) and (max-width:949px){
+  .acal{
+    font-size: 30px;
+  }
+}
